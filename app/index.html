@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="myNowApp" ng-csp ng-cloak>
+
+<head>
+    <meta charset="utf-8">
+    <title>WhatsNow</title>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="/bower_components/angular-material/default-theme.css"> -->
+    <!-- endbuild -->
+</head>
+
+<body layout="column">
+
+    <div class="container">
+        <md-toolbar class="md-theme-light">
+            <div class="md-toolbar-tools">
+                <span>My App's Title</span>
+                <!-- fill up the space between left and right area -->
+                <span flex></span>
+                <md-button class="md-raised" ng-disabled="false" href="#/settings">
+                    Settings
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <div ng-view=""></div>
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <script src="/bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-aria/angular-aria.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-material/angular-material.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/index.js -->
+    <script src="scripts/index.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <!-- endbuild -->
+</body>
+
+</html>

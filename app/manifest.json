@@ -1,0 +1,44 @@
+{
+  	"name": "__MSG_appName__",
+  	"description": "__MSG_appDescription__",
+  	"version": "1",
+  	"manifest_version": 2,
+  	"default_locale": "en",
+  	"permissions": [
+      "http://api.wunderground.com/api/",
+      "http://autocomplete.wunderground.com/api",
+      "http://icons.wxug.com/",
+  		// "app.runtime",
+  		// "app.window",
+  		// "clipboardRead",
+  		// "clipboardWrite",
+  		// "fullscreen",
+  		// "geolocation",
+  		// "location",
+  		// "notifications",
+  		// "storage",
+  		"<all_urls>"
+  	],
+  	"icons": {
+  		"16": "images/icon-16.png",
+  		"128": "images/icon-128.png"
+  	},
+  	"app": {
+  		"background": {
+  			"scripts": [
+  				"scripts/main.js",
+  				"scripts/chromereload.js",
+          "bower_components/angular/angular.min.js",
+          "bower_components/angular-route/angular-route.min.js",
+          "bower_components/angular-material/angular-material.min.js",
+          "bower_components/angular-resource/angular-resource.js",
+          "bower_components/angular-sanitize/angular-sanitize.min.js"
+  			]
+  		}
+    },
+    "content_security_policy": "script-src 'self'; img-src * data: chrome-extension-resource",
+    "web_accessible_resources": "images/icon-48.png",
+    "chrome_url_overrides" : {
+      "newtab": "index.html"
+    }
+  }

@@ -1,0 +1,14 @@
+<div ng-controller="SettingsCtrl" layout="column">
+    <md-content>
+        <md-card>
+            <md-card-content>
+                <h2>Settings Page</h2>
+                <md-divider></md-divider>
+                <form ng-submit="save()">
+                    <input type="text" ng-model="user.location" placeholder="Enter a location" />
+                    <md-button md-no-ink class="md-raised"ng-click="save()">Save</md-button>
+                </form>
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>
